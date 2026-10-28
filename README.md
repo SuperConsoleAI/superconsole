@@ -2,7 +2,7 @@
 
 **One workspace for all your AI coding agents.**
 
-SuperConsole is a native desktop app that runs Claude Code, Codex, Droid, Antigravity, and plain shells side by side, inside your own project folders. It adds usage insights down to the session, scheduled agents, autonomous bots with approval gates, multi-device sync, and a mobile companion, in a lightweight native app.
+SuperConsole is a native desktop app that runs Claude Code, Codex, Droid, Antigravity, and plain shells side by side, inside your own project folders. It adds one-click session resume, usage insights down to the session, scheduled agents, autonomous bots with approval gates, multi-device sync on your own database, and a mobile companion, in a lightweight native app.
 
 [**Download the latest release**](https://github.com/superConsoleAI/superconsole/releases/latest)
 
@@ -42,6 +42,18 @@ To run an agent you need its CLI installed (for example Claude Code or Codex). S
 
 ---
 
+## Resume any session
+
+Every session is logged. Open the session history, pick any previous session, and continue exactly where you left off, in one click.
+
+- **Works with your CLIs:** resume past Claude Code, Codex, and Antigravity sessions directly.
+- **Never lose your work:** history is saved locally, so closing a tab or restarting the app doesn't lose your place.
+- **One session, one record:** resuming reuses the original session instead of creating duplicates, and usage is counted only for the new work.
+- **From your phone too:** browse and resume sessions from the mobile companion.
+- **Long chats stay usable:** automatic compaction summarizes older turns into session logs, so bots pick up with the context from their last session.
+
+---
+
 ## Usage insights
 
 See exactly where your tokens and money go, at every level, with no spreadsheets and no guessing.
@@ -61,6 +73,23 @@ See exactly where your tokens and money go, at every level, with no spreadsheets
 - Cost report export.
 
 Usage is calculated locally from your own sessions, so the dashboard opens instantly and works offline.
+
+---
+
+## Your data, yours
+
+SuperConsole is local-first, and you decide whether anything leaves your machine.
+
+| Mode | How it works |
+| --- | --- |
+| **Go fully local** | Don't sign in and don't connect a database. Everything (sessions, agents, memory, keys) stays on your computer, and the app works fully offline. |
+| **Bring your own database (BYODB)** | Connect your own Turso database to sync workspaces, agents, sessions, and project files across your devices. The data lives in your database, under your account, not ours. |
+| **Off-platform credentials** | Keep connector credentials and tokens in your own database instead of on our platform. It's opt-in once your database is connected. |
+
+**Built to protect it**
+- Credentials and secrets are encrypted before they're stored (AES-256-GCM), and database tokens are held in memory only.
+- Chat history stays on the device where it happened and is never synced.
+- Sync only starts when you add your own database credentials.
 
 ---
 
