@@ -2,7 +2,7 @@
 
 **One workspace for all your AI coding agents.**
 
-SuperConsole is a native desktop app that runs Claude Code, Codex, Droid, Antigravity, and plain shells side by side, inside your own project folders. It adds scheduled agents, autonomous bots with approval gates, multi-device sync, and a mobile companion, in a lightweight native app.
+SuperConsole is a native desktop app that runs Claude Code, Codex, Droid, Antigravity, and plain shells side by side, inside your own project folders. It adds usage insights down to the session, scheduled agents, autonomous bots with approval gates, multi-device sync, and a mobile companion, in a lightweight native app.
 
 [**Download the latest release**](https://github.com/superConsoleAI/superconsole/releases/latest)
 
@@ -42,6 +42,28 @@ To run an agent you need its CLI installed (for example Claude Code or Codex). S
 
 ---
 
+## Usage insights
+
+See exactly where your tokens and money go, at every level, with no spreadsheets and no guessing.
+
+| Level | What you see |
+| --- | --- |
+| **Session** | Tokens and cost for each chat or CLI session. Resumed sessions count only the new usage, never double. |
+| **Agent** | Spend and activity per agent or bot, with weekly budget tracking. |
+| **Project** | Cost and tokens per workspace, with a 365-day activity heatmap. |
+| **User** | Your personal lifetime usage across every project and device. |
+| **Org** | Team-wide totals and breakdowns by member, ready for billing and budget reviews. |
+
+**What's tracked**
+- Input, output, reasoning, and cached tokens, priced separately for accurate cost.
+- Breakdowns by model, provider, CLI, member, and project.
+- Time ranges from the last 24 hours to the last 12 months.
+- Cost report export.
+
+Usage is calculated locally from your own sessions, so the dashboard opens instantly and works offline.
+
+---
+
 ## What you get
 
 **Terminals & agents**
@@ -69,7 +91,6 @@ To run an agent you need its CLI installed (for example Claude Code or Codex). S
 - Native streaming chat (Anthropic, OpenAI-compatible, Gemini, OpenRouter).
 - Code editor with Markdown preview, one-click Git commit and push, and an embedded browser tab.
 - Plugin and hook marketplace for skills, MCP servers, and connectors.
-- Usage and cost tracking across sessions, projects, orgs, and agents.
 
 **Local-first**
 - Everything works offline; your data lives in a local SQLite database.
